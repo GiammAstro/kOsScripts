@@ -1,4 +1,4 @@
-/hellolaunch
+//hellolaunch
 
 //First, we'll clear the terminal screen to make it look nice
 CLEARSCREEN.
