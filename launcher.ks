@@ -28,9 +28,10 @@ WHEN MAXTHRUST = 0 THEN {
 //than 100km. Each cycle, it will check each of the IF
 //statements inside and perform them if their conditions
 //are met
+SET TARGETAPOGEE TO 100000.
 SET MYSTEER TO HEADING(90,90).
 LOCK STEERING TO MYSTEER. // from now on we'll be able to change steering by just assigning a new value to MYSTEER
-UNTIL SHIP:APOAPSIS > 100000 { //Remember, all altitudes will be in meters, not kilometers
+UNTIL SHIP:APOAPSIS > TARGETAPOGEE { //Remember, all altitudes will be in meters, not kilometers
 
     //For the initial ascent, we want our steering to be straight
     //up and rolled due east
